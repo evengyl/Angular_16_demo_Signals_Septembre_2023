@@ -3,22 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DemoSignalsComponent } from './demo-signals/demo-signals.component';
-import {HttpClientModule} from '@angular/common/http';
-import { DemoObsSignalsComponent } from './demo-obs-signals/demo-obs-signals.component';
+import { Compo1Component } from './demo/compo1/compo1.component';
+import { Compo2Component } from './demo/compo2/compo2.component';
+import { Compo3Component } from './demo/compo3/compo3.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DemoSignalsComponent,
-    DemoObsSignalsComponent
+    Compo1Component,
+    Compo2Component,
+    Compo3Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    FormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

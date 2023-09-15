@@ -1,0 +1,29 @@
+<h1 style="color:red;">Composant 1</h1>
+<hr>
+<h3>Count : {{ count() }}</h3>
+
+<button (click)="increment()">Increment</button>
+<button (click)="decrement()">Decrement</button>
+<button (click)="initSignal()">Init signal with other value</button>
+
+
+<hr>
+<hr>
+
+<h2>Computed Signal</h2>
+<h3>Price {{ price() }}</h3>
+<h3>Quantity {{ qty() }}</h3>
+<input type="number" [ngModel]="qty()" (ngModelChange)="qty.set($event)">
+<h3>Total {{ total() }}</h3>
+
+
+
+
+<hr>
+<hr>
+<h2>Mutate Signal (update mais sur object + array of object)</h2>
+<li *ngFor="let user of listUser()">
+    id : {{ user.id }} ---- name : {{ user.name }}
+</li>
+<br>
+<button (click)="mutateList()">Mutate list (loic to evengyl)</button>
